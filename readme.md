@@ -64,8 +64,8 @@ map_1.render('map1.html')
 
 ## 后续开发
 
-- 累计趋势图
-- 增长趋势图
+- <font>累计趋势图<font> ![](./images/累计趋势.jpg)
+- <font>增长趋势图<font> ![](./images/增长趋势.jpg)
 - 疫情发展预测
 
 ## 参考资料
