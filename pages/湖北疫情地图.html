@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/hubei.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/romantic.js"></script>
+
+</head>
+<body>
+    <div id="525576a2562b44faa8c84748fe17c66c" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_525576a2562b44faa8c84748fe17c66c = echarts.init(
+            document.getElementById('525576a2562b44faa8c84748fe17c66c'), 'romantic', {renderer: 'canvas'});
+        var option_525576a2562b44faa8c84748fe17c66c = {
+    "backgroundColor": "#FFFAFA",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "map",
+            "name": "\u786e\u8bca\u4eba\u6570",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "mapType": "\u6e56\u5317",
+            "data": [
+                {
+                    "name": "\u6b66\u6c49",
+                    "value": 32994
+                },
+                {
+                    "name": "\u5b5d\u611f",
+                    "value": 2874
+                },
+                {
+                    "name": "\u9ec4\u5188",
+                    "value": 2662
+                },
+                {
+                    "name": "\u8346\u5dde",
+                    "value": 1431
+                },
+                {
+                    "name": "\u968f\u5dde",
+                    "value": 1160
+                },
+                {
+                    "name": "\u8944\u9633",
+                    "value": 1101
+                },
+                {
+                    "name": "\u9102\u5dde",
+                    "value": 1065
+                },
+                {
+                    "name": "\u8346\u95e8",
+                    "value": 927
+                },
+                {
+                    "name": "\u9ec4\u77f3",
+                    "value": 911
+                },
+                {
+                    "name": "\u5b9c\u660c",
+                    "value": 810
+                },
+                {
+                    "name": "\u5341\u5830",
+                    "value": 562
+                },
+                {
+                    "name": "\u54b8\u5b81",
+                    "value": 534
+                },
+                {
+                    "name": "\u4ed9\u6843",
+                    "value": 480
+                },
+                {
+                    "name": "\u5929\u95e8",
+                    "value": 362
+                },
+                {
+                    "name": "\u6069\u65bd\u5dde",
+                    "value": 229
+                },
+                {
+                    "name": "\u6f5c\u6c5f",
+                    "value": 94
+                },
+                {
+                    "name": "\u795e\u519c\u67b6",
+                    "value": 10
+                },
+                {
+                    "name": "\u5730\u533a\u5f85\u786e\u8ba4",
+                    "value": 0
+                }
+            ],
+            "roam": true,
+            "zoom": 1,
+            "showLegendSymbol": true,
+            "emphasis": {}
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u786e\u8bca\u4eba\u6570"
+            ],
+            "selected": {
+                "\u786e\u8bca\u4eba\u6570": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u6e56\u5317\u75ab\u60c5\u786e\u8bca\u4eba\u6570\u5206\u5e03\u56fe\u2014\u201448206",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0,
+        "pieces": [
+            {
+                "min": 1000,
+                "label": ">1000\u4eba",
+                "color": "#FF3030"
+            },
+            {
+                "min": 500,
+                "max": 1000,
+                "label": "500-1000\u4eba",
+                "color": "#FF4500"
+            },
+            {
+                "min": 100,
+                "max": 499,
+                "label": "100-499\u4eba",
+                "color": "#FF7F50"
+            },
+            {
+                "min": 10,
+                "max": 99,
+                "label": "10-99\u4eba",
+                "color": "#FFA500"
+            },
+            {
+                "min": 1,
+                "max": 9,
+                "label": "1-9\u4eba",
+                "color": "#FFDEAD"
+            }
+        ]
+    }
+};
+        chart_525576a2562b44faa8c84748fe17c66c.setOption(option_525576a2562b44faa8c84748fe17c66c);
+    </script>
+</body>
+</html>

@@ -10,6 +10,7 @@
 ## 困难
 
 - 数据来源问题已经解决，原本是根据支付宝的肺炎实时追踪手敲的，并保存在data_2020_02_12.py中。现在使用腾讯数据接口获取疫情数据。
+- 省份确诊人数在市级上不产生颜色和数字变化
 
 ## 使用说明
 
@@ -44,6 +45,8 @@ pyecharts是一个用于生成Echarts图表的类库，Echarts是百度开源的
   - 全球国家地图: pip install echarts-countries-pypkg
   - 中国省级地图: pip install echarts-china-provinces-pypkg
   - 中国市级地图: pip install echarts-china-cities-pypkg
+  - 中国区县级地图: pip3 install echarts-china-counties-pypkg 
+  - 中国区域地图: pip3 install echarts-china-misc-pypkg
 
 ### pyecharts的使用
 
@@ -91,6 +94,17 @@ map_1.render('map1.html')
 ```html 
 <div id="test" href="#test"></div>
 ```
+
+### 效果示意图
+
+- **全国疫情确诊人数分布图**![](./images/全国疫情确诊人数分布图.png)
+- **省份疫情确诊人数分布图**![](./images/湖北疫情确诊人数分布图.png)
+- **全球疫情确诊人数分布图**![]()
+- **累计趋势分析**![]()
+- **增长趋势分析**![]()
+- **国内疫情数据汇总**![]()
+- **国外疫情数据汇总**![]()
+- **疫情实时讯息**![]()
 
 ## 后续开发
 

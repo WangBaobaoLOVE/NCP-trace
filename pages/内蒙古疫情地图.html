@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/neimenggu.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/romantic.js"></script>
+
+</head>
+<body>
+    <div id="7b79f8d4eda344fdbe173360937ab73a" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_7b79f8d4eda344fdbe173360937ab73a = echarts.init(
+            document.getElementById('7b79f8d4eda344fdbe173360937ab73a'), 'romantic', {renderer: 'canvas'});
+        var option_7b79f8d4eda344fdbe173360937ab73a = {
+    "backgroundColor": "#FFFAFA",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "map",
+            "name": "\u786e\u8bca\u4eba\u6570",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "mapType": "\u5185\u8499\u53e4",
+            "data": [
+                {
+                    "name": "\u9102\u5c14\u591a\u65af",
+                    "value": 11
+                },
+                {
+                    "name": "\u5305\u5934",
+                    "value": 11
+                },
+                {
+                    "name": "\u547c\u548c\u6d69\u7279",
+                    "value": 7
+                },
+                {
+                    "name": "\u547c\u4f26\u8d1d\u5c14",
+                    "value": 6
+                },
+                {
+                    "name": "\u901a\u8fbd",
+                    "value": 6
+                },
+                {
+                    "name": "\u5df4\u5f66\u6dd6\u5c14",
+                    "value": 6
+                },
+                {
+                    "name": "\u8d64\u5cf0",
+                    "value": 5
+                },
+                {
+                    "name": "\u9521\u6797\u90ed\u52d2",
+                    "value": 3
+                },
+                {
+                    "name": "\u4e4c\u5170\u5bdf\u5e03",
+                    "value": 3
+                },
+                {
+                    "name": "\u4e4c\u6d77",
+                    "value": 2
+                },
+                {
+                    "name": "\u5174\u5b89\u76df\u4e4c\u5170\u6d69\u7279",
+                    "value": 1
+                }
+            ],
+            "roam": true,
+            "zoom": 1,
+            "showLegendSymbol": true,
+            "emphasis": {}
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u786e\u8bca\u4eba\u6570"
+            ],
+            "selected": {
+                "\u786e\u8bca\u4eba\u6570": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u5185\u8499\u53e4\u75ab\u60c5\u786e\u8bca\u4eba\u6570\u5206\u5e03\u56fe\u2014\u201461",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0,
+        "pieces": [
+            {
+                "min": 1000,
+                "label": ">1000\u4eba",
+                "color": "#FF3030"
+            },
+            {
+                "min": 500,
+                "max": 1000,
+                "label": "500-1000\u4eba",
+                "color": "#FF4500"
+            },
+            {
+                "min": 100,
+                "max": 499,
+                "label": "100-499\u4eba",
+                "color": "#FF7F50"
+            },
+            {
+                "min": 10,
+                "max": 99,
+                "label": "10-99\u4eba",
+                "color": "#FFA500"
+            },
+            {
+                "min": 1,
+                "max": 9,
+                "label": "1-9\u4eba",
+                "color": "#FFDEAD"
+            }
+        ]
+    }
+};
+        chart_7b79f8d4eda344fdbe173360937ab73a.setOption(option_7b79f8d4eda344fdbe173360937ab73a);
+    </script>
+</body>
+</html>

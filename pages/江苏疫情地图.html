@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/jiangsu.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/romantic.js"></script>
+
+</head>
+<body>
+    <div id="a36e15f6ef0945dabe1252d70350bd63" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_a36e15f6ef0945dabe1252d70350bd63 = echarts.init(
+            document.getElementById('a36e15f6ef0945dabe1252d70350bd63'), 'romantic', {renderer: 'canvas'});
+        var option_a36e15f6ef0945dabe1252d70350bd63 = {
+    "backgroundColor": "#FFFAFA",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "map",
+            "name": "\u786e\u8bca\u4eba\u6570",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "mapType": "\u6c5f\u82cf",
+            "data": [
+                {
+                    "name": "\u5357\u4eac",
+                    "value": 90
+                },
+                {
+                    "name": "\u82cf\u5dde",
+                    "value": 85
+                },
+                {
+                    "name": "\u5f90\u5dde",
+                    "value": 71
+                },
+                {
+                    "name": "\u6dee\u5b89",
+                    "value": 51
+                },
+                {
+                    "name": "\u65e0\u9521",
+                    "value": 49
+                },
+                {
+                    "name": "\u8fde\u4e91\u6e2f",
+                    "value": 42
+                },
+                {
+                    "name": "\u5357\u901a",
+                    "value": 38
+                },
+                {
+                    "name": "\u5e38\u5dde",
+                    "value": 38
+                },
+                {
+                    "name": "\u6cf0\u5dde",
+                    "value": 37
+                },
+                {
+                    "name": "\u76d0\u57ce",
+                    "value": 25
+                },
+                {
+                    "name": "\u626c\u5dde",
+                    "value": 20
+                },
+                {
+                    "name": "\u9547\u6c5f",
+                    "value": 12
+                },
+                {
+                    "name": "\u5bbf\u8fc1",
+                    "value": 12
+                }
+            ],
+            "roam": true,
+            "zoom": 1,
+            "showLegendSymbol": true,
+            "emphasis": {}
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u786e\u8bca\u4eba\u6570"
+            ],
+            "selected": {
+                "\u786e\u8bca\u4eba\u6570": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u6c5f\u82cf\u75ab\u60c5\u786e\u8bca\u4eba\u6570\u5206\u5e03\u56fe\u2014\u2014570",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0,
+        "pieces": [
+            {
+                "min": 1000,
+                "label": ">1000\u4eba",
+                "color": "#FF3030"
+            },
+            {
+                "min": 500,
+                "max": 1000,
+                "label": "500-1000\u4eba",
+                "color": "#FF4500"
+            },
+            {
+                "min": 100,
+                "max": 499,
+                "label": "100-499\u4eba",
+                "color": "#FF7F50"
+            },
+            {
+                "min": 10,
+                "max": 99,
+                "label": "10-99\u4eba",
+                "color": "#FFA500"
+            },
+            {
+                "min": 1,
+                "max": 9,
+                "label": "1-9\u4eba",
+                "color": "#FFDEAD"
+            }
+        ]
+    }
+};
+        chart_a36e15f6ef0945dabe1252d70350bd63.setOption(option_a36e15f6ef0945dabe1252d70350bd63);
+    </script>
+</body>
+</html>

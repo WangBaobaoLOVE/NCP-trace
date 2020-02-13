@@ -8,9 +8,16 @@ def get_ncp_data():
     data = requests.get(url).json()['data']
     return data
 
+#  得到累计疫情数据
+def get_dailyadd_data(all):
+    return all['chinaDayAddList']
+
+#  得到增长疫情数据
+def get_daily_data(all):
+    return all['chinaDayList']
+
 #  扁平化中国疫情数据
-def flatten_ncp_data():
-    all = json.loads(get_ncp_data())
+def flatten_ncp_data(all):
     #  初始化结果链表
     cities = []
     #  数据最新更新时间
@@ -37,4 +44,12 @@ def flatten_ncp_data():
             cities.append(city_ncp)
     return cities
 
-data = pd.DataFrame(flatten_ncp_data())
+all = json.loads(get_ncp_data())
+data = pd.DataFrame(flatten_ncp_data(all))
+daliy_data = pd.DataFrame(get_daily_data(all))
+daliyadd_data = pd.DataFrame(get_dailyadd_data(all))
+
+# print(all)
+# print(data)
+# print(daliy_data)
+# print(daliyadd_data)

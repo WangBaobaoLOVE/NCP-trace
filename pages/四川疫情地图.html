@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/sichuan.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/romantic.js"></script>
+
+</head>
+<body>
+    <div id="a4e06ae3bbff4c64a8ce2c095ea7ec44" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_a4e06ae3bbff4c64a8ce2c095ea7ec44 = echarts.init(
+            document.getElementById('a4e06ae3bbff4c64a8ce2c095ea7ec44'), 'romantic', {renderer: 'canvas'});
+        var option_a4e06ae3bbff4c64a8ce2c095ea7ec44 = {
+    "backgroundColor": "#FFFAFA",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "map",
+            "name": "\u786e\u8bca\u4eba\u6570",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "mapType": "\u56db\u5ddd",
+            "data": [
+                {
+                    "name": "\u6210\u90fd",
+                    "value": 131
+                },
+                {
+                    "name": "\u7518\u5b5c",
+                    "value": 37
+                },
+                {
+                    "name": "\u8fbe\u5dde",
+                    "value": 36
+                },
+                {
+                    "name": "\u5357\u5145",
+                    "value": 35
+                },
+                {
+                    "name": "\u5e7f\u5b89",
+                    "value": 30
+                },
+                {
+                    "name": "\u7ef5\u9633",
+                    "value": 22
+                },
+                {
+                    "name": "\u5df4\u4e2d",
+                    "value": 22
+                },
+                {
+                    "name": "\u5185\u6c5f",
+                    "value": 21
+                },
+                {
+                    "name": "\u6cf8\u5dde",
+                    "value": 19
+                },
+                {
+                    "name": "\u5fb7\u9633",
+                    "value": 17
+                },
+                {
+                    "name": "\u6500\u679d\u82b1",
+                    "value": 13
+                },
+                {
+                    "name": "\u5b9c\u5bbe",
+                    "value": 11
+                },
+                {
+                    "name": "\u9042\u5b81",
+                    "value": 10
+                },
+                {
+                    "name": "\u51c9\u5c71",
+                    "value": 10
+                },
+                {
+                    "name": "\u81ea\u8d21",
+                    "value": 9
+                },
+                {
+                    "name": "\u7709\u5c71",
+                    "value": 8
+                },
+                {
+                    "name": "\u96c5\u5b89",
+                    "value": 7
+                },
+                {
+                    "name": "\u5e7f\u5143",
+                    "value": 6
+                },
+                {
+                    "name": "\u4e50\u5c71",
+                    "value": 3
+                },
+                {
+                    "name": "\u8d44\u9633",
+                    "value": 3
+                },
+                {
+                    "name": "\u963f\u575d",
+                    "value": 1
+                }
+            ],
+            "roam": true,
+            "zoom": 1,
+            "showLegendSymbol": true,
+            "emphasis": {}
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u786e\u8bca\u4eba\u6570"
+            ],
+            "selected": {
+                "\u786e\u8bca\u4eba\u6570": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u56db\u5ddd\u75ab\u60c5\u786e\u8bca\u4eba\u6570\u5206\u5e03\u56fe\u2014\u2014451",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0,
+        "pieces": [
+            {
+                "min": 1000,
+                "label": ">1000\u4eba",
+                "color": "#FF3030"
+            },
+            {
+                "min": 500,
+                "max": 1000,
+                "label": "500-1000\u4eba",
+                "color": "#FF4500"
+            },
+            {
+                "min": 100,
+                "max": 499,
+                "label": "100-499\u4eba",
+                "color": "#FF7F50"
+            },
+            {
+                "min": 10,
+                "max": 99,
+                "label": "10-99\u4eba",
+                "color": "#FFA500"
+            },
+            {
+                "min": 1,
+                "max": 9,
+                "label": "1-9\u4eba",
+                "color": "#FFDEAD"
+            }
+        ]
+    }
+};
+        chart_a4e06ae3bbff4c64a8ce2c095ea7ec44.setOption(option_a4e06ae3bbff4c64a8ce2c095ea7ec44);
+    </script>
+</body>
+</html>
