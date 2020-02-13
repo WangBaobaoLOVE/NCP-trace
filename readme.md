@@ -18,6 +18,15 @@
 - getData.py是利用腾讯数据接口获取疫情数据
 - 中国疫情地图.py用于生成中国疫情地图.html文件
 - 中国疫情地图.html用于在浏览器上展示，双击或拖拽到浏览器即可
+- 肺炎实时追踪.html/.css将汇总各个页面，预计展示以下信息：
+  - 全国疫情确诊人数分布图
+  - 省份疫情确诊人数分布图
+  - 全球疫情确诊人数分布图
+  - 累计趋势分析
+  - 增长趋势分析
+  - 国内疫情数据汇总
+  - 国外疫情数据汇总
+  - 疫情实时讯息
 
 ## pyecharts
 
@@ -62,6 +71,24 @@ map_1.render('map1.html')
 
 <font color=red>**pyechart旧版本和新版本不兼容，且代码编写风格迥异，旧版本不再维护，鼓励大家使用新版本。**</font>
 
+## 肺炎实时追踪页面制作
+
+### iframe
+
+### 锚
+
+- 锚点目标：  
+
+```html 
+<div id="test" name="test"></div>
+```
+
+- 锚点：**注意在href的属性值前加“<font color=red>#</font>”**
+
+```html 
+<div id="test" href="#test"></div>
+```
+
 ## 后续开发
 
 - <font>累计趋势图<font> ![](./images/累计趋势.jpg)
@@ -70,6 +97,8 @@ map_1.render('map1.html')
 
 ## 参考资料
 
+### pyecharts作图
+
 - [python绘制中国地图](https://zhuanlan.zhihu.com/p/45202403)
 - [pyecharts官网](http://pyecharts.org/#/)
 - [pyecharts效果图展示](http://pyecharts.herokuapp.com/)
@@ -77,4 +106,10 @@ map_1.render('map1.html')
 - [数据可视化：使用pyecharts制作疫情地图——进击的小梓](https://zhuanlan.zhihu.com/p/105001857?utm_source=wechatMessage_article_bottom)
 - [（源代码）用Python制作疫情的实时数据地图（PS：全国以及每个省）——刘凤飞](https://zhuanlan.zhihu.com/p/105072241)
 - 疫情数据来自腾讯数据接口
+
+### html页面制作
+
+- iframe标签
+  - [Web前端之iframe详解——	
+滥好人 ](https://www.cnblogs.com/hq233/p/9849939.html)
 
