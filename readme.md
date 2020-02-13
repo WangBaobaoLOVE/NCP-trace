@@ -8,6 +8,17 @@
 
 - 数据来源问题已经解决，原本是根据支付宝的肺炎实时追踪手敲的，并保存在data_2020_02_12.py中。现在使用腾讯数据接口获取疫情数据。
 
+## 使用说明
+
+### 文件作用说明
+
+- readme.md即本说明文档
+- images文件夹存放的是相关图片
+- data_2020_02_12.py是根据支付宝手敲的数据，可以不看
+- getData.py是利用腾讯数据接口获取疫情数据
+- 中国疫情地图.py用于生成中国疫情地图.html文件
+- 中国疫情地图.html用于在浏览器上展示，双击或拖拽到浏览器即可
+
 ## pyecharts
 
 ### pyecharts的介绍
@@ -63,5 +74,7 @@ map_1.render('map1.html')
 - [pyecharts官网](http://pyecharts.org/#/)
 - [pyecharts效果图展示](http://pyecharts.herokuapp.com/)
 - [python制作疫情实时分布图](https://www.zhihu.com/people/ji-jin-51-37)
+- [数据可视化：使用pyecharts制作疫情地图——进击的小梓](https://zhuanlan.zhihu.com/p/105001857?utm_source=wechatMessage_article_bottom)
+- [（源代码）用Python制作疫情的实时数据地图（PS：全国以及每个省）——刘凤飞](https://zhuanlan.zhihu.com/p/105072241)
 - 疫情数据来自腾讯数据接口
 
