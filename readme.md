@@ -78,7 +78,15 @@ map_1.render('map1.html')
 
 <font color=red>**pyechart旧版本和新版本不兼容，且代码编写风格迥异，旧版本不再维护，鼓励大家使用新版本。**</font>
 
+## pygal
+
+### pygal安装
+
+- pip install pygal
+
 ## 肺炎实时追踪页面制作
+
+### 页面布局
 
 ### iframe
 
@@ -101,16 +109,16 @@ map_1.render('map1.html')
 - **全国疫情确诊人数分布图**![](./images/全国疫情确诊人数分布图.png)
 - **省份疫情确诊人数分布图**![](./images/湖北疫情确诊人数分布图.png)
 - **全球疫情确诊人数分布图**![](./images/世界疫情确诊人数分布图.png)
-- **累计趋势分析**![]()
-- **增长趋势分析**![]()
+- **累计趋势分析**![](./images/累计趋势.svg)
+- **增长趋势分析**![](./images/新增趋势.svg)
 - **国内疫情数据汇总**![]()
 - **国外疫情数据汇总**![]()
 - **疫情实时讯息**![]()
 
 ## 后续开发
 
-- <font>累计趋势图<font> ![](./images/累计趋势.jpg)
-- <font>增长趋势图<font> ![](./images/增长趋势.jpg)
+- <font>在有网情况下省份定位显示省份疫情地图，无网显示默认<font>
+- <font>利用Javascript制作下拉表单，用户可以通过点击，选择显示的省份<font> 
 - 疫情发展预测
 
 ## 参考资料
@@ -124,6 +132,10 @@ map_1.render('map1.html')
 - [数据可视化：使用pyecharts制作疫情地图——进击的小梓](https://zhuanlan.zhihu.com/p/105001857?utm_source=wechatMessage_article_bottom)
 - [（源代码）用Python制作疫情的实时数据地图（PS：全国以及每个省）——刘凤飞](https://zhuanlan.zhihu.com/p/105072241)
 - 疫情数据来自腾讯数据接口
+
+### pygal做趋势图svg
+
+- [pygal官方文档](http://www.pygal.org/en/stable/documentation/index.html)
 
 ### html页面制作
 

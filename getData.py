@@ -73,12 +73,7 @@ def get_world_data(all):
 
 all = json.loads(get_ncp_data())
 data = pd.DataFrame(flatten_ncp_data(all))
-daliy_data = pd.DataFrame(get_daily_data(all))
-daliyadd_data = pd.DataFrame(get_dailyadd_data(all))
+daliy_data = pd.DataFrame(get_daily_data(all))[['date','confirm','suspect','dead','heal']]
+daliyadd_data = pd.DataFrame(get_dailyadd_data(all))[['date','confirm','suspect','dead','heal']]
 world_data = pd.DataFrame(get_world_data(all))
 
-# print(all)
-# print(data)
-# print(daliy_data)
-# print(daliyadd_data)
-# print(world_data)

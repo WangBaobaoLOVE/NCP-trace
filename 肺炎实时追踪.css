@@ -96,11 +96,30 @@ html, body, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, ul, li, form, table, tr, 
     height: 100%;
 }
 
-.main .ncp-data{
-    width: 100%;
+.main .ncp-trend-day{
+    width: 80%;
     height: 600px;
+    margin: 0px auto;
     margin-bottom: 30px;
 }
+
+.main .ncp-trend-day iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.main .ncp-trend-dayadd{
+    width: 80%;
+    height: 600px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+}
+
+.main .ncp-trend-dayadd iframe{
+    width: 100%;
+    height: 100%;
+}
+
 
 .main .ncp-news{
     width: 100%;

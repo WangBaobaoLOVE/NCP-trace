@@ -1,7 +1,8 @@
-from pyecharts.charts import Map
+from pyecharts.charts import Map, Line
 from pyecharts import options as opts
 from pyecharts.globals import ThemeType#主题
 from getData import *
+import pygal
 
 #将数据处理成列表
 list1 = [[i, j] for i, j in zip(data['省份'], data['累计确认'])]
@@ -75,3 +76,24 @@ map_world.set_global_opts(
 
 map_world.render('./pages/世界疫情地图.html')
 
+# 累计趋势
+dayAddLine = pygal.Line(x_label_rotation=20, show_y_guides=False,show_minor_x_labels=False)
+dayAddLine.title = '累计趋势(全国)'
+dayAddLine.x_labels = daliy_data['date']
+dayAddLine.add("确诊", daliy_data['confirm'])
+dayAddLine.add("疑似", daliy_data['suspect'])
+dayAddLine.add("死亡", daliy_data['dead'], secondary=True)
+dayAddLine.add("治愈", daliy_data['heal'], secondary=True)
+dayAddLine.x_labels_major = list(daliy_data['date'])[::5]
+dayAddLine.render_to_file('./images/累计趋势.svg')
+
+# 新增趋势
+dayAddLine = pygal.Line(x_label_rotation=20, show_y_guides=False,show_minor_x_labels=False)
+dayAddLine.title = '新增趋势(全国)'
+dayAddLine.x_labels = daliyadd_data['date']
+dayAddLine.add("确诊", daliyadd_data['confirm'])
+dayAddLine.add("疑似", daliyadd_data['suspect'])
+dayAddLine.add("死亡", daliyadd_data['dead'], secondary=True)
+dayAddLine.add("治愈", daliyadd_data['heal'], secondary=True)
+dayAddLine.x_labels_major = list(daliyadd_data['date'])[::5]
+dayAddLine.render_to_file('./images/新增趋势.svg')
