@@ -33,7 +33,7 @@ def flatten_ncp_data(all):
             city_ncp = {
                 '日期': date,
                 '省份': province['name'],
-                '市': city['name'],
+                '市': city['name']+'市',
                 '新增确认': city['today']['confirm'],
                 '新增治愈': city['today']['heal'],
                 '新增死亡': city['today']['dead'],
@@ -44,12 +44,32 @@ def flatten_ncp_data(all):
             cities.append(city_ncp)
     return cities
 
+def get_world_data(all):
+    countries = []
+
+    date = all['lastUpdateTime']
+    world_ncp_data = all['areaTree']
+
+    for country in world_ncp_data:
+        country_ncp = {
+            '日期': date,
+            '国家': country['name'],
+            '累计确认': country['total']['confirm'],
+            '累计治愈': country['total']['heal'],
+            '累计死亡': country['total']['dead']
+        }
+        countries.append(country_ncp)
+    return countries
+
+
 all = json.loads(get_ncp_data())
 data = pd.DataFrame(flatten_ncp_data(all))
 daliy_data = pd.DataFrame(get_daily_data(all))
 daliyadd_data = pd.DataFrame(get_dailyadd_data(all))
+world_data = pd.DataFrame(get_world_data(all))
 
 # print(all)
 # print(data)
 # print(daliy_data)
 # print(daliyadd_data)
+# print(world_data)
