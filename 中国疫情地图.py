@@ -5,7 +5,6 @@ from getData import *
 
 #将数据处理成列表
 list1 = [[i, j] for i, j in zip(data['省份'], data['累计确认'])]
-print(list1)
 total_pupo = data['累计确认'].sum()
 
 #  创建国家地图
@@ -33,7 +32,6 @@ province_names = data[data['省份'].duplicated()==False]['省份']
 for province_name in province_names:
     province_ncp_data = data[data['省份']==province_name]
     city_ncp_data = [[i, j] for i, j in zip(province_ncp_data['市'], province_ncp_data['累计确认'])]
-    print(city_ncp_data)
 
     map_province = Map(init_opts=opts.InitOpts(bg_color="#FFFAFA", theme=ThemeType.ROMANTIC))
     map_province.add("确诊人数", city_ncp_data, maptype=province_name)
@@ -55,8 +53,7 @@ for province_name in province_names:
     map_province.render('./pages/'+province_name+'疫情地图.html')
 
 #  创建世界疫情地图
-world_ncp_data = [[i, j] for i, j in zip(world_data['国家'], world_data['累计确认'])]
-print(world_ncp_data)
+world_ncp_data = [[i, j] for i, j in zip(world_data['country'], world_data['累计确认'])]
 
 map_world = Map(init_opts=opts.InitOpts(bg_color="#FFFAFA", theme=ThemeType.ROMANTIC))
 map_world.add("确诊人数", world_ncp_data, maptype="world", is_map_symbol_show=False)

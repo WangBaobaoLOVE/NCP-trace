@@ -2,6 +2,14 @@ import requests
 import json
 import pandas as pd
 
+toEnglish = {
+    '中国': 'China', '日本':'Japan', '新加坡':'Singapore', '泰国':'Thailand', '韩国': 'Korea',
+    '马来西亚':'Malaysia', '越南':'Vietnam', '德国':'Germany','美国': 'United States','澳大利亚':'Australia',
+    '法国':'France','英国':'United Kingdom','阿联酋':'United Arab Emirates','加拿大': 'Canada','印度':'India',
+    '菲律宾':'Philippines','意大利':'Italy','西班牙':'Spain','俄罗斯': 'Russia','芬兰':'Finland',
+    '斯里兰卡':'Sri Lanka', '瑞典':'Sweden', '柬埔寨':'Cambodia', '尼泊尔':'Nepal', '比利时':'Belgium'
+}
+
 #  腾讯数据接口获取json格式疫情数据
 def get_ncp_data():
     url = 'https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5'
@@ -54,6 +62,7 @@ def get_world_data(all):
         country_ncp = {
             '日期': date,
             '国家': country['name'],
+            'country': toEnglish[country['name']],
             '累计确认': country['total']['confirm'],
             '累计治愈': country['total']['heal'],
             '累计死亡': country['total']['dead']
