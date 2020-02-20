@@ -5,6 +5,7 @@
     <title>肺炎实时追踪</title>
 
     <link rel="stylesheet" href="./肺炎实时追踪.css">
+
 </head>
 <body>
     <header>
@@ -16,7 +17,7 @@
                 <div class="header-list"> 
                     <ul>
                         <li><a href="#map-ncp-china">全国疫情图</a></li>
-                        <li><a href="#map-ncp-province">省份疫情图</a></li>
+                        <li><a href="#provinceSelecter">省份疫情图</a></li>
                         <li><a href="#map-ncp-world">全球疫情图</a></li>
                         <li><a href="#svg-ncp">疫情趋势分析</a></li>
                         <li><a href="#">国内疫情数据</a></li>
@@ -35,9 +36,54 @@
             <iframe src="./pages/中国疫情地图.html" frameborder="0" scrolling="no">
             </iframe>
         </div>
+        <div class="provinceSelecter" id="divProId"><a name="provinceSelecter"></a>
+            <div>
+                <div><a>安徽</a></div>
+                <div><a>澳门</a></div>
+                <div><a>北京</a></div>
+                <div><a>福建</a></div>
+                <div><a>甘肃</a></div>
+                <div><a>广东</a></div>
+                <div><a>广西</a></div>
+            </div>
+            <div>
+                <div><a>海南</a></div>
+                <div><a>河北</a></div>
+                <div><a>黑龙江</a></div>
+                <div><a>湖北</a></div>
+                <div><a>湖南</a></div>
+                <div><a>吉林</a></div>
+                <div><a>江苏</a></div>
+            </div>
+            <div>
+                <div><a>江西</a></div>
+                <div><a>辽宁</a></div>
+                <div><a>内蒙古</a></div>
+                <div><a>宁夏</a></div>
+                <div><a>青海</a></div>
+                <div><a>山东</a></div>
+                <div><a>山西</a></div>
+            </div>
+            <div>
+                <div><a>陕西</a></div>
+                <div><a>上海</a></div>
+                <div><a>四川</a></div>
+                <div><a>台湾</a></div>
+                <div><a>天津</a></div>
+                <div><a>西藏</a></div>
+                <div><a>香港</a></div>
+            </div>
+            <div>
+                <div><a>新疆</a></div>
+                <div><a>云南</a></div>
+                <div><a>浙江</a></div>
+                <div><a>重庆</a></div>
+            </div>
+        </div>
+        
         <div class="ncp-province">
             <a name="map-ncp-province"></a>
-            <iframe src="./pages/湖北疫情地图.html" frameborder="0" scrolling="no">
+            <iframe src="./pages/湖北疫情地图.html" id="proMapIframId" frameborder="0" scrolling="no">
             </iframe>
         </div>
         <div class="ncp-world">
@@ -55,10 +101,40 @@
             <iframe src="./images/新增趋势.svg" frameborder="0" scrolling="no">
             </iframe>
         </div>
+    </div>
 
+    <div class="divData">
+        <div class="divChildData">
+            <div class="titleColumnChildData"></div>
+            <div class="dataColumnChildData">
+                <div class="dataColumn">
+                    <div class="city"></div>
+                    <div class="confirm"></div>
+                    <div class="suspect"></div>
+                    <div class="dead"></div>
+                    <div class="heal"></div>
+                </div>
+            </div>
+        </div>
+        <div class="divWorldData">
+            <div class="titleColumnWorldData"></div>
+            <div class="dataColumnWorldData">
+                <div class="dataColumn">
+                    <div class="country"></div>
+                    <div class="confirm"></div>
+                    <div class="suspect"></div>
+                    <div class="dead"></div>
+                    <div class="heal"></div>
+                </div>
+            </div>
+        </div>
         <div class="ncp-news">
 
         </div>
     </div>
 </body>
+
+<script src="./肺炎实时追踪.js"></script>
+
+
 </html>

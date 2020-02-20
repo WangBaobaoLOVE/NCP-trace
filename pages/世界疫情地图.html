@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
             <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/shandong.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/world.js"></script>
         <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/romantic.js"></script>
 
 </head>
 <body>
-    <div id="7040d73ee339474ba515d15eaf048851" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="c15b293b504443c4bd35b65f7abbb761" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_7040d73ee339474ba515d15eaf048851 = echarts.init(
-            document.getElementById('7040d73ee339474ba515d15eaf048851'), 'romantic', {renderer: 'canvas'});
-        var option_7040d73ee339474ba515d15eaf048851 = {
+        var chart_c15b293b504443c4bd35b65f7abbb761 = echarts.init(
+            document.getElementById('c15b293b504443c4bd35b65f7abbb761'), 'romantic', {renderer: 'canvas'});
+        var option_c15b293b504443c4bd35b65f7abbb761 = {
     "backgroundColor": "#FFFAFA",
     "animation": true,
     "animationThreshold": 2000,
@@ -28,77 +28,127 @@
             "type": "map",
             "name": "\u786e\u8bca\u4eba\u6570",
             "label": {
-                "show": true,
+                "show": false,
                 "position": "top",
                 "margin": 8
             },
-            "mapType": "\u5c71\u4e1c",
+            "mapType": "world",
             "data": [
                 {
-                    "name": "\u9752\u5c9b\u5e02",
-                    "value": 59
+                    "name": "China",
+                    "value": 74680
                 },
                 {
-                    "name": "\u6d4e\u5b81\u5e02",
-                    "value": 52
+                    "name": "Japan",
+                    "value": 725
                 },
                 {
-                    "name": "\u4e34\u6c82\u5e02",
-                    "value": 49
+                    "name": "Korea",
+                    "value": 104
                 },
                 {
-                    "name": "\u70df\u53f0\u5e02",
-                    "value": 47
+                    "name": "Singapore",
+                    "value": 84
                 },
                 {
-                    "name": "\u6d4e\u5357\u5e02",
-                    "value": 47
+                    "name": "Thailand",
+                    "value": 35
                 },
                 {
-                    "name": "\u6f4d\u574a\u5e02",
-                    "value": 44
+                    "name": "Malaysia",
+                    "value": 22
                 },
                 {
-                    "name": "\u5a01\u6d77\u5e02",
-                    "value": 38
-                },
-                {
-                    "name": "\u804a\u57ce\u5e02",
-                    "value": 38
-                },
-                {
-                    "name": "\u5fb7\u5dde\u5e02",
-                    "value": 37
-                },
-                {
-                    "name": "\u6cf0\u5b89\u5e02",
-                    "value": 33
-                },
-                {
-                    "name": "\u6dc4\u535a\u5e02",
-                    "value": 29
-                },
-                {
-                    "name": "\u67a3\u5e84\u5e02",
-                    "value": 24
-                },
-                {
-                    "name": "\u83cf\u6cfd\u5e02",
-                    "value": 18
-                },
-                {
-                    "name": "\u65e5\u7167\u5e02",
+                    "name": "Vietnam",
                     "value": 16
                 },
                 {
-                    "name": "\u6ee8\u5dde\u5e02",
+                    "name": "Germany",
+                    "value": 16
+                },
+                {
+                    "name": "Australia",
                     "value": 15
+                },
+                {
+                    "name": "United States",
+                    "value": 15
+                },
+                {
+                    "name": "France",
+                    "value": 12
+                },
+                {
+                    "name": "United Kingdom",
+                    "value": 9
+                },
+                {
+                    "name": "United Arab Emirates",
+                    "value": 9
+                },
+                {
+                    "name": "Canada",
+                    "value": 8
+                },
+                {
+                    "name": "Iran",
+                    "value": 5
+                },
+                {
+                    "name": "Philippines",
+                    "value": 3
+                },
+                {
+                    "name": "Italy",
+                    "value": 3
+                },
+                {
+                    "name": "India",
+                    "value": 3
+                },
+                {
+                    "name": "Spain",
+                    "value": 2
+                },
+                {
+                    "name": "Russia",
+                    "value": 2
+                },
+                {
+                    "name": "Cambodia",
+                    "value": 1
+                },
+                {
+                    "name": "Belgium",
+                    "value": 1
+                },
+                {
+                    "name": "Nepal",
+                    "value": 1
+                },
+                {
+                    "name": "Finland",
+                    "value": 1
+                },
+                {
+                    "name": "Sri Lanka",
+                    "value": 1
+                },
+                {
+                    "name": "Sweden",
+                    "value": 1
                 }
             ],
             "roam": true,
             "zoom": 1,
-            "showLegendSymbol": true,
-            "emphasis": {}
+            "showLegendSymbol": false,
+            "emphasis": {},
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
         }
     ],
     "legend": [
@@ -130,7 +180,7 @@
     },
     "title": [
         {
-            "text": "\u5c71\u4e1c\u75ab\u60c5\u786e\u8bca\u4eba\u6570\u5206\u5e03\u56fe\u2014\u2014546",
+            "text": "\u4e16\u754c\u75ab\u60c5\u786e\u8bca\u4eba\u6570\u5206\u5e03\u56fe\u2014\u201475774",
             "padding": 5,
             "itemGap": 10
         }
@@ -188,7 +238,7 @@
         ]
     }
 };
-        chart_7040d73ee339474ba515d15eaf048851.setOption(option_7040d73ee339474ba515d15eaf048851);
+        chart_c15b293b504443c4bd35b65f7abbb761.setOption(option_c15b293b504443c4bd35b65f7abbb761);
     </script>
 </body>
 </html>

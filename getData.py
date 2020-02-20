@@ -7,7 +7,8 @@ toEnglish = {
     '马来西亚':'Malaysia', '越南':'Vietnam', '德国':'Germany','美国': 'United States','澳大利亚':'Australia',
     '法国':'France','英国':'United Kingdom','阿联酋':'United Arab Emirates','加拿大': 'Canada','印度':'India',
     '菲律宾':'Philippines','意大利':'Italy','西班牙':'Spain','俄罗斯': 'Russia','芬兰':'Finland',
-    '斯里兰卡':'Sri Lanka', '瑞典':'Sweden', '柬埔寨':'Cambodia', '尼泊尔':'Nepal', '比利时':'Belgium'
+    '斯里兰卡':'Sri Lanka', '瑞典':'Sweden', '柬埔寨':'Cambodia', '尼泊尔':'Nepal', '比利时':'Belgium',
+    '伊朗':'Iran'
 }
 
 #  腾讯数据接口获取json格式疫情数据
@@ -42,9 +43,9 @@ def flatten_ncp_data(all):
                 '日期': date,
                 '省份': province['name'],
                 '市': city['name']+'市',
-                '新增确认': city['today']['confirm'],
-                '新增治愈': city['today']['heal'],
-                '新增死亡': city['today']['dead'],
+                # '新增确认': city['today']['confirm'],
+                # '新增治愈': city['today']['heal'],
+                # '新增死亡': city['today']['dead'],
                 '累计确认': city['total']['confirm'],
                 '累计治愈': city['total']['heal'],
                 '累计死亡': city['total']['dead']
