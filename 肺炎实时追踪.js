@@ -2,7 +2,7 @@ var divPro = document.getElementById("divProId");
 divProNodeList = divPro.querySelectorAll("a");
 var proMapIfram = document.getElementById("proMapIframId");
 
-var proName = divProNodeList[10];
+var proName = divProNodeList[11];
 proName.style.backgroundColor = "red";
 
 for(var i=0; i<divProNodeList.length; i++){

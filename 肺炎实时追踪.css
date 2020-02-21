@@ -156,24 +156,63 @@ body {
 body .divData {
     width: 28%;
     margin: 0px;
-    height: 570x;
+    height: 100%;
     border: 1px solid red;
-    position: fixed;
+    position: absolute;
+    left: 70%;
     top: 80px;
-    right: 1%;
 }
 
-body .divData .divChildData{
+body .divData .divChinaData{
     width: 100%;
-    height: 190px;
+}
+
+body .divData .divChinaData .titleColumnChinaData{
+    width: 100%;
+    height: 30px;
+    background-color: grey;
+}
+
+body .divData .divChinaData .titleColumnChinaData > div {
+    float: left;
+    width: 20%;
+    height: 30px;
+}
+
+body .divData .divChinaData .titleColumnChinaData > div a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    line-height: 30px;
 }
 
 body .divData .divWorldData{
     width: 100%;
-    height: 190px;
+}
+
+body .divData .divWorldData .titleColumnWorldData{
+    width: 100%;
+    height: 30px;
+    background-color: grey;
+}
+
+body .divData .divWorldData .titleColumnWorldData > div {
+    float: left;
+    width: 20%;
+    height: 30px;
+}
+
+body .divData .divWorldData .titleColumnWorldData > div a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    line-height: 30px;
 }
 
 body .divData .ncp-news{
     width: 100%;
-    height: 190px;
 }
