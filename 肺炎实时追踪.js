@@ -24,32 +24,35 @@ for(var i=0; i<divProNodeList.length; i++){
 }
 
 
-$.ajax({
-    url: "data.json",//json文件位置
-    // type: "post",
-    dataType: "json", //返回数据格式为json
-    success: function(data) {//请求成功完成后要执行的方法
-        console.log(data)
-    }
+$.getJSON("./data.json", function(data){
+    var interColumnChinaDataHtml="";
+    var interColumnWorldDataHtml="";
+
+    $.each(data["areaTree"][0]["children"], function(infoIndex, info){
+
+        interColumnChinaDataHtml += "<div class='dataColumn'>" 
+        + "<div class='city'>  <a>" + info["name"] + "</a></div>"
+        + "<div class='confirm'><a>" + info["total"]["confirm"] + "</a></div>"
+        + "<div class='suspect'><a>" + info["total"]["suspect"] + "</a></div>"
+        + "<div class='suspect'><a>" + info["total"]["dead"] + "</a></div>"
+        + "<div class='confirm'><a>" + info["total"]["heal"] + "</a></div>"
+        + "</div>"
+    
+    })
+    $("#dataColumnChinaData").append(interColumnChinaDataHtml);
+
+    $.each(data["areaTree"], function(infoIndex, info){
+
+        interColumnWorldDataHtml += "<div class='dataColumn'>" 
+        + "<div class='city'>  <a>" + info["name"] + "</a></div>"
+        + "<div class='confirm'><a>" + info["total"]["confirm"] + "</a></div>"
+        + "<div class='suspect'><a>" + info["total"]["suspect"] + "</a></div>"
+        + "<div class='suspect'><a>" + info["total"]["dead"] + "</a></div>"
+        + "<div class='confirm'><a>" + info["total"]["heal"] + "</a></div>"
+        + "</div>"
+    
+    })
+    $("#dataColumnWorldData").append(interColumnWorldDataHtml);
+
 })
 
-// $(function (){
-//     $("#btn").click(function ()  {
-//       $.getJSON("js/userinfo.json", function (data){
-//         var $jsontip = $("#jsonTip");
-//         var strHtml = "123";
-//         //存储数据的变量
-//         $jsontip.empty();
-//         //清空内容
-//         $.each(data, function (infoIndex, info){
-//           strHtml += "姓名：" + info["name"] + "<br>";
-//           strHtml += "性别：" + info["sex"] + "<br>";
-//           strHtml += "邮箱：" + info["email"] + "<br>";
-//           strHtml += "<hr>"
-//         })
-  
-//         $jsontip.html(strHtml);
-//         //显示处理后的数据
-//       })
-//     })
-//   })

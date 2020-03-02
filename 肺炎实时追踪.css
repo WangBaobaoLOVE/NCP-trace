@@ -188,6 +188,31 @@ body .divData .divChinaData .titleColumnChinaData > div a{
     line-height: 30px;
 }
 
+body .divData .divChinaData #dataColumnChinaData {
+    width: 100%;
+    background-color: #CCCC99;
+}
+body .divData .divChinaData #dataColumnChinaData .dataColumn{
+    width: 100%;
+    height: 30px;
+    background-color: #CCCC99;
+}
+
+body .divData .divChinaData #dataColumnChinaData .dataColumn > div {
+    float: left;
+    width: 20%;
+    height: 30px;
+}
+
+body .divData .divChinaData #dataColumnChinaData .dataColumn > div a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+}
+
 body .divData .divWorldData{
     width: 100%;
 }
@@ -209,6 +234,31 @@ body .divData .divWorldData .titleColumnWorldData > div a{
     width: 100%;
     height: 100%;
     color: white;
+    text-align: center;
+    line-height: 30px;
+}
+
+body .divData .divWorldData #dataColumnWorldData {
+    width: 100%;
+    background-color: #CCCC99;
+}
+body .divData .divWorldData #dataColumnWorldData .dataColumn{
+    width: 100%;
+    height: 30px;
+    background-color: #CCCC99;
+}
+
+body .divData .divWorldData #dataColumnWorldData .dataColumn > div {
+    float: left;
+    width: 20%;
+    height: 30px;
+}
+
+body .divData .divWorldData #dataColumnWorldData .dataColumn > div a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: black;
     text-align: center;
     line-height: 30px;
 }
