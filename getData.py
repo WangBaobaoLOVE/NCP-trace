@@ -73,8 +73,14 @@ def get_world_data(all):
 
 
 all = json.loads(get_ncp_data())
+print(type(all))
 data = pd.DataFrame(flatten_ncp_data(all))
-daliy_data = pd.DataFrame(get_daily_data(all))[['date','confirm','suspect','dead','heal']]
-daliyadd_data = pd.DataFrame(get_dailyadd_data(all))[['date','confirm','suspect','dead','heal']]
-world_data = pd.DataFrame(get_world_data(all))
+# daliy_data = pd.DataFrame(get_daily_data(all))[['date','confirm','suspect','dead','heal']]
+# daliyadd_data = pd.DataFrame(get_dailyadd_data(all))[['date','confirm','suspect','dead','heal']]
+# world_data = pd.DataFrame(get_world_data(all))
+
+
+## 保存数据到data.json
+with open('data.json', 'w',encoding='utf-8') as result_file:
+    json.dump(all, result_file,ensure_ascii=False)
 
