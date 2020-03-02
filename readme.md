@@ -119,8 +119,8 @@ map_1.render('map1.html')
 - **全球疫情确诊人数分布图**![](./images/世界疫情确诊人数分布图.png)
 - **累计趋势分析**![](./images/累计趋势.svg)
 - **增长趋势分析**![](./images/新增趋势.svg)
-- **国内疫情数据汇总**![]()
-- **国外疫情数据汇总**![]()
+- **国内疫情数据汇总**![](./images/chinaData.png)
+- **国外疫情数据汇总**![](./images/worldData.png)
 - **疫情实时讯息**![]()
 
 ## 后续开发
@@ -155,3 +155,7 @@ map_1.render('map1.html')
 - 下拉菜单制作
   - [web前端实战系列[3]——下拉菜单——叶莜落](https://www.cnblogs.com/helloIT/articles/5155698.html)
   - [快速制作下拉式菜单栏](https://www.bilibili.com/video/av82476546?from=search&seid=429844793107330536)
+
+### Web同源策略，跨源请求
+
+- [Firefox 68: CORS请求不是http](https://www.jianshu.com/p/78904381ba32)
